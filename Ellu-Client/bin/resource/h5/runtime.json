@@ -1,0 +1,4 @@
+{
+	"scripts":["newFight.max.js"],
+	"screenOrientation":"sensor_landscape"
+}

@@ -1,0 +1,1 @@
+{"frames":{"arrow.png":{"frame":{"h":44,"idx":0,"w":44,"x":0,"y":78},"sourceSize":{"h":44,"w":44},"spriteSourceSize":{"x":0,"y":0}},"coin.png":{"frame":{"h":77,"idx":0,"w":115,"x":0,"y":0},"sourceSize":{"h":150,"w":150},"spriteSourceSize":{"x":18,"y":38}}},"meta":{"image":"mainUI.png","prefix":"views/mainUI/"}}

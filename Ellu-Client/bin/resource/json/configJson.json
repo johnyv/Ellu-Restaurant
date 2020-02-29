@@ -1,0 +1,54 @@
+{
+    "gameSetting": [
+        [
+            1,
+            "playSound",
+            1
+        ],
+        [
+            2,
+            "fps",
+            30
+        ]
+    ],
+    "roleSetting": [
+        [
+            "female",
+            12
+        ],
+        [
+            "male",
+            12
+        ],
+        [
+            "monster",
+            8
+        ]
+    ],
+    "viewConfig":[
+        [
+            "MAIN_VIEW",
+            "MainUI.json",
+            false,
+            false,
+            false,
+            null
+        ],
+        [
+            "MENU_VIEW",
+            "MenuUI.json",
+            true,
+            true,
+            true,
+            "menu.json"
+        ],
+        [
+            "INSTALLATION_INFO",
+            "InstallationInfo.json",
+            false,
+            true,
+            false,
+            null
+        ]
+    ]
+}

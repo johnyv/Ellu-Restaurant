@@ -1,0 +1,30 @@
+D .
+D scene
+D views
+D scene/1_1
+R 670DE9C0 door_bg_1.png
+P D8481E81 door_bg_2.png
+R 77E375D3 door_bg_3.png
+R 1A70BA60 door_bg_4.png
+P D21AFC17 floor.png
+P 0C2FBAF3 npc_1.png
+D views/custom
+P 582B57AD anniu.png
+P 4DA5DD6E anniu_down.png
+R 32E4C449 bg_3.png
+P F600FF7F bottombg.png
+P 854125F4 buttonBg.png
+R 7687E3CB coin_1.png
+P DFE5346F labelBottom.png
+R 4947A64B tip_1.png
+R AD3B44E5 tip_2.png
+D views/icon
+R 82943839 selected.png
+R 40BA467F table_1.png
+R 076DE21A table_2.png
+R 10283ADD table_3.png
+R F6981FDD table_4.png
+R F9C0AD97 table_5.png
+D views/mainUI
+P 4BAB0663 arrow.png
+P FA0F9D42 coin.png

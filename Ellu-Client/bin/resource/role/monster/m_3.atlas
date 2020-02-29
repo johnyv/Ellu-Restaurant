@@ -1,0 +1,76 @@
+{
+    "frames": {
+        "move_0.png": {
+            "frame": {
+                "h": 77,
+                "idx": 0,
+                "w": 53,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 84,
+                "w": 84
+            },
+            "spriteSourceSize": {
+                "x": 16,
+                "y": 2
+            }
+        },
+        "move_1.png": {
+            "frame": {
+                "h": 77,
+                "idx": 0,
+                "w": 53,
+                "x": 0,
+                "y": 78
+            },
+            "sourceSize": {
+                "h": 84,
+                "w": 84
+            },
+            "spriteSourceSize": {
+                "x": 16,
+                "y": 2
+            }
+        },
+        "move_2.png": {
+            "frame": {
+                "h": 77,
+                "idx": 0,
+                "w": 53,
+                "x": 54,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 84,
+                "w": 84
+            },
+            "spriteSourceSize": {
+                "x": 16,
+                "y": 2
+            }
+        },
+        "move_3.png": {
+            "frame": {
+                "h": 77,
+                "idx": 0,
+                "w": 53,
+                "x": 54,
+                "y": 78
+            },
+            "sourceSize": {
+                "h": 84,
+                "w": 84
+            },
+            "spriteSourceSize": {
+                "x": 16,
+                "y": 2
+            }
+        }
+    },
+    "meta": {
+        "image": "m_3.png",
+        "prefix": "m_3/"
+    }
+}

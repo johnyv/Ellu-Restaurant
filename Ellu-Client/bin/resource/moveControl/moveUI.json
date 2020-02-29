@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":960,"height":540},"compId":2,"child":[{"type":"Sprite","props":{"y":363,"x":0,"var":"_rockerBase","texture":"moveControl/di.png"},"compId":8},{"type":"Sprite","props":{"y":421,"x":58,"var":"rocker","texture":"moveControl/yuandian.png"},"compId":9}],"loadList":["moveControl/di.png","moveControl/yuandian.png"],"loadList3D":[]}
