@@ -2,6 +2,7 @@ import GameConfig from "./GameConfig";
 import CommandChannel from "./game/controller/CommandChannel";
 import ConstName from "./game/ConstName";
 import Comp_scene_layer from "./component/Comp_scene_layer";
+import WeChatLogin from "./game/platform/WeChatLogin";
 class Main {
 	constructor() {
 		//根据IDE设置初始化引擎		
@@ -28,6 +29,10 @@ class Main {
 		//激活资源版本控制，version.json由IDE发布功能自动生成，如果没有也不影响后续流程
 		Laya.ResourceVersion.enable("version.json", Laya.Handler.create(this, this.onVersionLoaded), Laya.ResourceVersion.FILENAME_VERSION);
 		CommandChannel.instance.init();
+		if(Laya.Browser.onMiniGame){
+			console.log("微信登录");
+			WeChatLogin.instance.login();
+		}
 
 	}/*  */
 

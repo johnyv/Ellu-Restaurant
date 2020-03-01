@@ -1365,6 +1365,38 @@
 	    }
 	}
 
+	class WeChatLogin {
+	    constructor() {
+	    }
+	    static get instance() {
+	        !WeChatLogin._instance && (WeChatLogin._instance = new WeChatLogin());
+	        return WeChatLogin._instance;
+	    }
+	    login() {
+	        wx.login({
+	            pkgName: "testPackage",
+	            success(res) {
+	                console.log(res);
+	                wx.request({
+	                    url: 'https://login.xueyan.online/cgi-bin/auth',
+	                    data: res.code,
+	                    method: 'POST',
+	                    header: { 'content-type': 'application/json' },
+	                    dataType: 'json',
+	                    responseType: 'text',
+	                    success(res) {
+	                        console.log(res);
+	                    },
+	                    fail() { },
+	                    complete() { }
+	                });
+	            },
+	            fail() { },
+	            complete() { }
+	        });
+	    }
+	}
+
 	class Main {
 	    constructor() {
 	        if (window["Laya3D"])
@@ -1391,6 +1423,10 @@
 	        Laya.ClassUtils.regClass("component.Comp_scene_layer", Comp_scene_layer);
 	        Laya.ResourceVersion.enable("version.json", Laya.Handler.create(this, this.onVersionLoaded), Laya.ResourceVersion.FILENAME_VERSION);
 	        CommandChannel.instance.init();
+	        if (Laya.Browser.onMiniGame) {
+	            console.log("微信登录");
+	            WeChatLogin.instance.login();
+	        }
 	    }
 	    onVersionLoaded() {
 	        Laya.AtlasInfoManager.enable("fileconfig.json", Laya.Handler.create(this, this.onConfigLoaded));
